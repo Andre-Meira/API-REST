@@ -66,7 +66,7 @@ router.post("/update", async (req, res) => {
 router.delete("/delete", async(req,res) => {
   const query = "DELETE FROM info_user where id = $1";
   const body = req.body.id;
-  client.query(query, body)
+  client.query(query,[body])
     .then(()=> {console.info("Delete Success!!")})
     .catch((err) => {console.error(err)})
 })
