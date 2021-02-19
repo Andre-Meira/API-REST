@@ -9,5 +9,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //call Routers
 require("./controllers/authController")(app);;
 
-
 module.exports = app;

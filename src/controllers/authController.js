@@ -2,7 +2,6 @@ const client = require('../models/client');
 const express = require('express');
 const router = express.Router();
 
-
 router.post("/register", (req, res)=> {
     client.connect(function(err){
         if(err){
@@ -27,10 +26,8 @@ router.get("/search", async (req, res)=>{
         if(err){
           return console.error('Error in client', err.stack)
         }
-        
         client.query("select * from info_user", (err, result) => {
-          release()
-          
+          release()          
           if (err){
             return console.error('Error executing query', err.stack)
           }
@@ -41,6 +38,5 @@ router.get("/search", async (req, res)=>{
         })
     })
 })
-
 
 module.exports = app => app.use("/auth",router);
