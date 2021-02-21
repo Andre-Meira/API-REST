@@ -1,14 +1,12 @@
 # API-REST
 
 ## Descrição do Projeto
-<p align="center">Estudos em API-REST</p>
+Estudos em API-REST
 
-
-<h4 align="center"> 
-	🚧 🚀 Em construção...  🚧
-</h4>
+🚧 🚀 Em construção...  🚧
 
 
 ### 🛠 Tecnologias
+
 As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
