@@ -1,6 +1,5 @@
 const client = require('../models/client');
 const express = require('express');
-const { query } = require('express');
 const router = express.Router();
 
 router.post("/register", (req, res)=> {
